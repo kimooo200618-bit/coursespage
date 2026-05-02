@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduVerse - Learn JavaScript</title>
+ 
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/start-course.css">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+ 
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="courses.html" class="logo">EduVerse</a>
+ 
+        <nav>
+            <ul>
+                <li><a href="courses.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Themes</a></li>
+            </ul>
+        </nav>
+ 
+        <a href="profile.html" class="user-profile">
+            <img src="imgs/pp.jpg" alt="User Avatar" class="user-avatar">
+            <span class="user-name">Alex Johnson</span>
+        </a>
+    </header>
+ 
+    <main>
+ 
+        <!-- Hero -->
+        <section class="course-hero">
+ 
+            <!-- Left -->
+            <div>
+                <div class="breadcrumb">
+                    <a href="courses.html">Courses</a>
+                    <span>›</span>
+                    <span>Web Development</span>
+                    <span>›</span>
+                    <span>JavaScript</span>
+                </div>
+ 
+                <div class="free-badge">
+                    <span class="badge-free">FREE</span>
+                    <span class="badge-label">Course</span>
+                </div>
+ 
+                <h1>Learn <span>JavaScript</span></h1>
+ 
+                <p>
+                    Learn how to use JavaScript — a powerful and flexible programming
+                    language for adding interactivity and dynamic behavior to your websites.
+                </p>
+ 
+                <div class="rating-row">
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star half">★</span>
+                    </div>
+                    <span class="rating-score">4.5</span>
+                    <span class="rating-count">32,781 ratings</span>
+                </div>
+ 
+                <div class="enrolled-row">
+                    <div class="enrolled-avatars">
+                        <span>AJ</span>
+                        <span>SM</span>
+                        <span>+</span>
+                    </div>
+                    <p class="enrolled-text"><strong>2,441,974</strong> learners enrolled</p>
+                </div>
+ 
+                <div class="cta-row">
+                    <button class="btn-start" onclick="startCourse()">Start Course</button>
+                    <button class="btn-bookmark" title="Save for later">🔖</button>
+                </div>
+            </div>
+ 
+            <!-- Includes Card -->
+            <aside class="includes-card">
+                <h3>This course includes</h3>
+                <ul class="includes-list">
+                    <li><div class="includes-icon">🤖</div> AI assistance for guided coding help</li>
+                    <li><div class="includes-icon">🧩</div> Projects to apply new skills</li>
+                    <li><div class="includes-icon">📝</div> Quizzes to test your knowledge</li>
+                    <li><div class="includes-icon">🏆</div> A certificate of completion</li>
+                </ul>
+            </aside>
+ 
+        </section>
+ 
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-icon">📊</span>
+                <div>
+                    <div class="stat-label">Skill Level</div>
+                    <div class="stat-value">Beginner</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">⏱</span>
+                <div>
+                    <div class="stat-label">Time to Complete</div>
+                    <div class="stat-value">15 Hours</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">🧩</span>
+                <div>
+                    <div class="stat-label">Projects</div>
+                    <div class="stat-value">12</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">✅</span>
+                <div>
+                    <div class="stat-label">Prerequisites</div>
+                    <div class="stat-value">None</div>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- Body -->
+        <section class="course-body">
+ 
+            <!-- Left: About + Skills -->
+            <div>
+                <div class="about-section">
+                    <h2>About this course</h2>
+                    <p>
+                        You interact with JavaScript code all the time — you just might not realize it.
+                        It powers dynamic behavior on websites and plays an important role in many fields,
+                        like front-end and back-end engineering, game and mobile development, virtual reality, and more.
+                    </p>
+                    <p>
+                        In this course, you'll learn JavaScript fundamentals that will be helpful as you
+                        build websites, web applications, and more. Starting with the basics like variables,
+                        data types, and functions, you'll gradually work your way up to more advanced
+                        concepts like object-oriented programming and asynchronous JavaScript.
+                    </p>
+                </div>
+ 
+                <div class="skills-section">
+                    <h2>Skills you'll gain</h2>
+                    <ul class="skills-list">
+                        <li>Build core programming concepts</li>
+                        <li>Learn object-oriented concepts</li>
+                        <li>Read and write JavaScript</li>
+                        <li>Work with arrays and objects</li>
+                        <li>Handle asynchronous code with Promises</li>
+                        <li>Manipulate the DOM for web interactivity</li>
+                    </ul>
+                </div>
+            </div>
+ 
+            <!-- Right: Curriculum -->
+            <aside class="curriculum-card">
+                <h3>Course Curriculum</h3>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">1</div>
+                    <div class="ci-info">
+                        <div class="ci-title">Introduction to JavaScript</div>
+                        <div class="ci-meta">3 lessons · 45 min</div>
+                    </div>
+                    <span class="ci-lock">🔓</span>
+                </div>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">2</div>
+                    <div class="ci-info">
+                        <div class="ci-title">Variables & Data Types</div>
+                        <div class="ci-meta">5 lessons · 1.2 hrs</div>
+                    </div>
+                    <span class="ci-lock">🔓</span>
+                </div>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">3</div>
+                    <div class="ci-info">
+                        <div class="ci-title">Functions & Scope</div>
+                        <div class="ci-meta">6 lessons · 1.5 hrs</div>
+                    </div>
+                    <span class="ci-lock">🔒</span>
+                </div>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">4</div>
+                    <div class="ci-info">
+                        <div class="ci-title">Arrays & Objects</div>
+                        <div class="ci-meta">7 lessons · 2 hrs</div>
+                    </div>
+                    <span class="ci-lock">🔒</span>
+                </div>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">5</div>
+                    <div class="ci-info">
+                        <div class="ci-title">DOM Manipulation</div>
+                        <div class="ci-meta">8 lessons · 2.5 hrs</div>
+                    </div>
+                    <span class="ci-lock">🔒</span>
+                </div>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">6</div>
+                    <div class="ci-info">
+                        <div class="ci-title">Async JavaScript & Promises</div>
+                        <div class="ci-meta">6 lessons · 2 hrs</div>
+                    </div>
+                    <span class="ci-lock">🔒</span>
+                </div>
+ 
+                <div class="curriculum-item">
+                    <div class="ci-num">7</div>
+                    <div class="ci-info">
+                        <div class="ci-title">Final Project</div>
+                        <div class="ci-meta">1 project · 3 hrs</div>
+                    </div>
+                    <span class="ci-lock">🔒</span>
+                </div>
+            </aside>
+ 
+        </section>
+ 
+    </main>
+ 
+    <script src="js/start-course.js"></script>
+ 
+</body>
+</html>
