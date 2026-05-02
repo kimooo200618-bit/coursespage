@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #00ff9d; /* color of the buttons and icons */
+    --bg-dark: #0a0a0a; /* dark background color for dark theme */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-main: #ffffff; /* main text color */
+    --text-muted: #999; /* muted text color */
+    --transition: all 0.3s ease; /* transition for hover effects */
+    --animation: transitionIn 0.8s ease-out; /* animation for page load */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Cairo', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden; /* prevent horizontal scroll */
+    animation: var(--animation);
+}
